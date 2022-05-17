@@ -5,13 +5,10 @@ const Header = () => {
     return (
         <Cont>
             <LogoCont>
-                <p>this is the logo</p>
-                <Logo />
+                <Logo src="/images/logo-letters.svg" />
             </LogoCont>
             <Nav>
-                <Product>
-                    <p>this is product</p>
-                </Product>
+                <Product />
                 <Enterprise />
                 <Documentation />
                 <Explore />
@@ -24,24 +21,26 @@ export default Header
 
 
 const Cont = styled.div`
-    height: 100%;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 `
 const LogoCont = styled.div`
-    background-color: #24292f;
-    width: 50%;
+
 `
 
+const Logo = styled.img`
+    width: 100%;
+    background-repeat: no-repeat;
+    height:50px;
+    padding: 4px;
+    margin: 5px;
+`
 const Nav = styled.div`
     background-color: #0a1d34;
     width: 20%;
-`
-
-const Logo = styled.div`
-    max-width: 68px;
 `
 
 const Product = styled.div`
